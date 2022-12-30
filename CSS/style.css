@@ -120,6 +120,7 @@ header a:hover{
     padding-top: 5px;
     margin-right: 10px;
 }
+
 /*section hébergements*/
 
 #hebergements{
@@ -128,6 +129,15 @@ header a:hover{
     justify-content: space-between;
     
 }
+.cards_hebergements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cards_hebergements a{
+    text-decoration: none;
+    color: #000;
+}
 .card_hebergement{
     width: 246px;
     height: 210px;
@@ -135,23 +145,14 @@ header a:hover{
     border-radius: 20px;
     margin:0 0 30px 0; 
 }
-.cards_hebergements{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 .hebergements h1{
     margin: 40px 0 25px 40px;
 }
-
-/* hebergements */
-
 .hebergements{
     width: 880px;
     background-color: #f2f2f2;
     border-radius: 20px;
     margin-right: 40px;
-    
 }
 .hebergements img{
     object-fit: cover;
@@ -159,7 +160,6 @@ header a:hover{
     height: 110px;
     margin: 5px;
     border-radius: 20px 20px 0 0;
-    
 }
 .hebergements h2{
     margin: 0 0 9px 15px;
@@ -168,13 +168,12 @@ header a:hover{
     margin: 0 0 9px 15px;
     font-size: 14px;
 }
-
-
 .afficher_plus{
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 900;
     margin: 0 0 40px 20px;
 }
+
 /* hebergements populaires*/
 
 .hebergements_populaires{
@@ -183,7 +182,6 @@ header a:hover{
     height: 625px;
     background-color: #f2f2f2;
     border-radius: 20px;
-    /*padding: 40px;*/
 }
 .hebergements_populaires h1{
     margin: 40px 0 25px 40px;
@@ -195,12 +193,15 @@ header a:hover{
     margin: 0 0 9px 15px;
     font-size: 14px;
 }
-
 .cards_populaires{
     display: flex;
     flex-direction:column;
     justify-content: space-between;
     align-items: center;
+}
+.cards_populaires a{
+    text-decoration: none;
+    color: #000;
 }
 .card_populaire_flex{
     display: flex;
@@ -215,7 +216,7 @@ header a:hover{
 .card_populaire img{
     object-fit: cover;
     width: 130px;
-    height: 135px;
+    height: 134px;
     margin: 5px;
     border-radius: 20px 0 0 20px;
 }
@@ -223,7 +224,6 @@ header a:hover{
     position: absolute;
     top:46px;
     right: 42px;
-
 }
 
 /* activites */
@@ -234,14 +234,12 @@ header a:hover{
 .cards_activites{
     display: flex;
     justify-content: space-between;
-    
 }
 .card_activite{
     width: 302px;
     height: 445px;
     border-radius: 20px;
     box-shadow: 0 5px 10px #f2f2f2;
-    
 }
 .card_activite img{
     width: 100%;
@@ -251,6 +249,10 @@ header a:hover{
 }
 .card_activite h2{
     margin-left: 20px;
+}
+.cards_activites a{
+    text-decoration: none;
+    color: #000;
 }
 
 /* footer */
