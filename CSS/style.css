@@ -240,7 +240,17 @@ header a:hover{
     width: 302px;
     height: 445px;
     border-radius: 20px;
-    background-color: #0065FC;
+    box-shadow: 0 5px 10px #f2f2f2;
+    
+}
+.card_activite img{
+    width: 100%;
+    height: 389px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.card_activite h2{
+    margin-left: 20px;
 }
 
 /* footer */
