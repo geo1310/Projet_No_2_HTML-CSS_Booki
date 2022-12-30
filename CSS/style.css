@@ -120,3 +120,145 @@ header a:hover{
     padding-top: 5px;
     margin-right: 10px;
 }
+/*section hébergements*/
+
+#hebergements{
+    margin-top: 39px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card_hebergement{
+    width: 246px;
+    height: 210px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin:0 0 30px 0; 
+}
+.cards_hebergements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+.hebergements h1{
+    margin: 40px 0 25px 40px;
+}
+
+/* hebergements */
+
+.hebergements{
+    width: 880px;
+    /*height: 625px;*/
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    /*padding: 40px;*/
+    margin-right: 40px;
+    
+}
+.hebergements img{
+    object-fit: cover;
+    width: 235px;
+    height: 110px;
+    margin: 5px;
+    border-radius: 20px 20px 0 0;
+    
+}
+.hebergements h2{
+    margin: 0 0 9px 15px;
+}
+.hebergements p{
+    margin: 0 0 9px 15px;
+}
+
+/*cotations etoiles*/
+
+.fa-star{
+    font-size: 12px;
+    color: #0065FC;
+}
+.fa-star-grise{
+    color: #f2f2f2;
+}
+.hebergements_cotation{
+    display: flex;
+    margin-left: 15px;
+}
+.hebergements_cotation p{
+    margin: 0;
+    width: 15px;
+}
+.afficher_plus{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 40px 20px;
+}
+/* hebergements populaires*/
+
+.hebergements_populaires{
+    width: 420px;
+    height: 625px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    /*padding: 40px;*/
+}
+.hebergements_populaires h1{
+    margin: 40px 0 25px 40px;
+}
+.cards_populaires{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+.card_populaire{
+    width: 343px;
+    height: 144px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-bottom: 33px;
+}
+/* activites */
+
+#activites h1{
+    margin: 60px 0 25px 0;
+}
+.cards_activites{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card_activite{
+    width: 302px;
+    height: 445px;
+    
+    border-radius: 20px;
+    background-color: #0065FC;
+}
+
+/* footer */
+
+footer{
+    height: 225px;
+    margin-top: 60px;
+    padding-top: 45px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 12px;
+}
+footer a:hover{
+    color: #0065FC;
+}
