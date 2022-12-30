@@ -139,8 +139,6 @@ header a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
-    
 }
 .hebergements h1{
     margin: 40px 0 25px 40px;
@@ -150,10 +148,8 @@ header a:hover{
 
 .hebergements{
     width: 880px;
-    /*height: 625px;*/
     background-color: #f2f2f2;
     border-radius: 20px;
-    /*padding: 40px;*/
     margin-right: 40px;
     
 }
@@ -170,25 +166,10 @@ header a:hover{
 }
 .hebergements p{
     margin: 0 0 9px 15px;
+    font-size: 14px;
 }
 
-/*cotations etoiles*/
 
-.fa-star{
-    font-size: 12px;
-    color: #0065FC;
-}
-.fa-star-grise{
-    color: #f2f2f2;
-}
-.hebergements_cotation{
-    display: flex;
-    margin-left: 15px;
-}
-.hebergements_cotation p{
-    margin: 0;
-    width: 15px;
-}
 .afficher_plus{
     font-size: 18px;
     font-weight: 700;
@@ -197,6 +178,7 @@ header a:hover{
 /* hebergements populaires*/
 
 .hebergements_populaires{
+    position: relative;
     width: 420px;
     height: 625px;
     background-color: #f2f2f2;
@@ -206,11 +188,22 @@ header a:hover{
 .hebergements_populaires h1{
     margin: 40px 0 25px 40px;
 }
+.hebergements_populaires h2{
+    margin: 16px 0 9px 15px;
+}
+.hebergements_populaires p{
+    margin: 0 0 9px 15px;
+    font-size: 14px;
+}
+
 .cards_populaires{
     display: flex;
     flex-direction:column;
     justify-content: space-between;
     align-items: center;
+}
+.card_populaire_flex{
+    display: flex;
 }
 .card_populaire{
     width: 343px;
@@ -219,6 +212,20 @@ header a:hover{
     background-color: #fff;
     margin-bottom: 33px;
 }
+.card_populaire img{
+    object-fit: cover;
+    width: 130px;
+    height: 135px;
+    margin: 5px;
+    border-radius: 20px 0 0 20px;
+}
+.fa-chart-line{
+    position: absolute;
+    top:46px;
+    right: 42px;
+
+}
+
 /* activites */
 
 #activites h1{
@@ -232,7 +239,6 @@ header a:hover{
 .card_activite{
     width: 302px;
     height: 445px;
-    
     border-radius: 20px;
     background-color: #0065FC;
 }
@@ -261,4 +267,25 @@ footer a{
 }
 footer a:hover{
     color: #0065FC;
+}
+
+/*cotations etoiles*/
+
+.fa-star{
+    font-size: 12px;
+    color: #0065FC;
+}
+.fa-star-grise{
+    color: #f2f2f2;
+}
+.hebergements_cotation{
+    display: flex;
+    margin-left: 15px;
+}
+.hebergements_cotation p{
+    margin: 0;
+    width: 15px;
+}
+.cotation_populaire{
+    margin-top: 40px;
 }
