@@ -8,12 +8,12 @@ body{
 
 /* proprietes generales*/
 
-h1{
+h1, h2{
     font-size: 22px;
     font-weight: 700;
     line-height: 26px;
 }
-h2{
+h3{
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
@@ -26,7 +26,7 @@ h2{
 
 /* HEADER */
 
-header{
+#header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,11 +36,11 @@ header{
 .logo{
     height: 23px; 
 }
-header ul{
+#header ul{
     display: flex;
     list-style: none;
 }
-header a{
+#header a{
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
@@ -48,7 +48,7 @@ header a{
     color: #000;
     margin-left: 67px;
 }
-header a:hover{
+#header a:hover{
     color: #0065FC;
     border-top: solid 2px;
     padding-top: 44px;
@@ -150,7 +150,7 @@ header a:hover{
     border-radius: 20px;
     margin:0 0 30px 0; 
 }
-.hebergements h1{
+.hebergements h2{
     margin: 40px 0 25px 40px;
 }
 .hebergements{
@@ -166,7 +166,7 @@ header a:hover{
     margin: 5px;
     border-radius: 20px 20px 0 0;
 }
-.hebergements h2{
+.hebergements h3{
     margin: 0 0 9px 15px;
 }
 .hebergements p{
@@ -188,10 +188,10 @@ header a:hover{
     background-color: #f2f2f2;
     border-radius: 20px;
 }
-.hebergements_populaires h1{
+.hebergements_populaires h2{
     margin: 40px 0 25px 40px;
 }
-.hebergements_populaires h2{
+.hebergements_populaires h3{
     margin: 16px 0 9px 15px;
 }
 .hebergements_populaires p{
@@ -233,7 +233,7 @@ header a:hover{
 
 /* activites */
 
-#activites h1{
+#activites h2{
     margin: 60px 0 25px 0;
 }
 .cards_activites{
@@ -252,7 +252,7 @@ header a:hover{
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
-.card_activite h2{
+.card_activite h3{
     margin-left: 20px;
 }
 .cards_activites a{
@@ -262,7 +262,7 @@ header a:hover{
 
 /* footer */
 
-footer{
+#footer{
     height: 225px;
     margin-top: 60px;
     padding-top: 45px;
@@ -270,11 +270,15 @@ footer{
     display: flex;
     justify-content: space-around;
 }
-footer ul{
+#footer h2{
+    font-size: 18px;
+    line-height: 21px;
+}
+#footer ul{
     list-style: none;
     padding: 0;
 }
-footer a{
+#footer a{
     text-decoration: none;
     color: #000;
     font-size: 16px;
@@ -282,7 +286,7 @@ footer a{
     display: block;
     margin-bottom: 12px;
 }
-footer a:hover{
+#footer a:hover{
     color: #0065FC;
 }
 
