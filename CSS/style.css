@@ -1,3 +1,14 @@
+/* Variables */
+
+:root{
+    /*palette_couleurs*/
+    --bleu_fonce: #0065FC;
+    --bleu_clair: #DEEBFF;
+    --gris_1: #f2f2f2;
+    --gris_2: #d9d9d9;
+}
+
+
 /* Bloc Principal*/
 
 body{
@@ -20,7 +31,7 @@ h3{
 }
 .fa-solid{
     font-size: 18px;
-    color: #0065FC;
+    color: var(--bleu_fonce);
     width: 30px;
 }
 
@@ -30,7 +41,7 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    margin: 30px 0 0 10px;
     margin-bottom: 40px;
 }
 .logo{
@@ -45,46 +56,51 @@ h3{
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    color: #000;
-    margin-left: 67px;
+    line-height: 19px;
+    color: black;
+    margin-left: 40px;
+    padding: 0 20px 0 20px;
 }
 #header a:hover{
-    color: #0065FC;
+    color: var(--bleu_fonce);
     border-top: solid 2px;
     padding-top: 44px;
 }
 
 /* section Formulaire*/
 
+.formulaire_recherche{
+    margin-left: 10px;
+}
 .localisation_flex{
     display: flex;
 }
 .fa-location-dot{
-    color: #000;
+    color: black;
     text-align: center;
 }
 .icone_localisation{
     width: 30px;
     padding: 12px;
-    border: 2px solid #f2f2f2;
+    border: 2px solid var(--gris_1);
     border-radius: 15px 0 0 15px;
-    background-color: #f2f2f2;
+    background-color: var(--gris_1);
 }
 .input-submit{
     font-size: 18px;
     border-radius: 0 15px 15px 0;
-    background-color: #0065FC;
+    background-color: var(--bleu_fonce);
     color:white;
-    border: 2px solid #0065FC;
+    border: 2px solid var(--bleu_fonce);
     padding: 12px;
 }
 #choix_localisation{
     font-size: 18px;
     line-height: 21px;
     font-weight: 700;
-    color: #000;
+    color: black;
     padding: 12px;
-    border: 2px solid #F2F2F2;
+    border: 2px solid var(--gris_1);
     margin-left: -5px;
 }
 
@@ -102,11 +118,11 @@ h3{
 }
 .filtre{
     padding: 15px;
-    border: 2px solid #d9d9d9;
+    border: 2px solid var(--gris_2);
     border-radius: 25px;
 }
 .filtre:hover{
-    background-color: #DEEBFF;
+    background-color: var(--bleu_clair);
 }
 
 /*Ligne information nb de logements*/
@@ -119,7 +135,7 @@ h3{
     font-size: 12px;
     width: 25px;
     height: 20px;
-    border: 2px solid #f2f2f2;
+    border: 2px solid var(--gris_1);
     border-radius: 50%;
     text-align: center;
     padding-top: 5px;
@@ -129,7 +145,7 @@ h3{
 /*section hébergements*/
 
 #hebergements{
-    margin-top: 39px;
+    margin: 39px 10px 0 10px;
     display: flex;
     justify-content: space-between;
     
@@ -141,12 +157,12 @@ h3{
 }
 .cards_hebergements a{
     text-decoration: none;
-    color: #000;
+    color: black;
 }
 .card_hebergement{
     width: 246px;
     height: 210px;
-    background-color: #fff;
+    background-color: white;
     border-radius: 20px;
     margin:0 0 30px 0; 
 }
@@ -155,7 +171,7 @@ h3{
 }
 .hebergements{
     width: 880px;
-    background-color: #f2f2f2;
+    background-color: var(--gris_1);
     border-radius: 20px;
     margin-right: 40px;
 }
@@ -185,7 +201,7 @@ h3{
     position: relative;
     width: 420px;
     height: 625px;
-    background-color: #f2f2f2;
+    background-color: var(--gris_1);
     border-radius: 20px;
 }
 .hebergements_populaires h2{
@@ -206,7 +222,7 @@ h3{
 }
 .cards_populaires a{
     text-decoration: none;
-    color: #000;
+    color: black;
 }
 .card_populaire_flex{
     display: flex;
@@ -215,8 +231,8 @@ h3{
     width: 343px;
     height: 144px;
     border-radius: 20px;
-    background-color: #fff;
-    margin-bottom: 33px;
+    background-color: white;
+    margin: 0 5px 33px 5px;
 }
 .card_populaire img{
     object-fit: cover;
@@ -234,7 +250,7 @@ h3{
 /* activites */
 
 #activites h2{
-    margin: 60px 0 25px 0;
+    margin: 60px 0 25px 10px;
 }
 .cards_activites{
     display: flex;
@@ -244,7 +260,7 @@ h3{
     width: 302px;
     height: 445px;
     border-radius: 20px;
-    box-shadow: 0 5px 10px #f2f2f2;
+    box-shadow: 0 5px 10px var(--gris_1);
 }
 .card_activite img{
     width: 100%;
@@ -257,7 +273,7 @@ h3{
 }
 .cards_activites a{
     text-decoration: none;
-    color: #000;
+    color: black;
 }
 
 /* footer */
@@ -266,7 +282,7 @@ h3{
     height: 225px;
     margin-top: 60px;
     padding-top: 45px;
-    background-color: #f2f2f2;
+    background-color: var(--gris_1);
     display: flex;
     justify-content: space-around;
 }
@@ -280,24 +296,24 @@ h3{
 }
 #footer a{
     text-decoration: none;
-    color: #000;
+    color: black;
     font-size: 16px;
     font-weight: 400;
     display: block;
     margin-bottom: 12px;
 }
 #footer a:hover{
-    color: #0065FC;
+    color: var(--bleu_fonce);
 }
 
 /*cotations etoiles*/
 
 .fa-star{
     font-size: 12px;
-    color: #0065FC;
+    color:var(--bleu_fonce);
 }
 .fa-star-grise{
-    color: #f2f2f2;
+    color: var(--gris_1);
 }
 .hebergements_cotation{
     display: flex;
