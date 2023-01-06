@@ -26,10 +26,8 @@ h3{
     font-size: 14px;
     line-height: 19px;
 }
-.fa-solid{
-    font-size: 18px;
-    color: var(--bleu_fonce);
-    width: 30px;
+.titre_page{
+    margin-left: 15px;
 }
 
 /* HEADER */
@@ -38,7 +36,7 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0 0 10px;
+    margin: 30px 15px 0 15px;
     margin-bottom: 40px;
 }
 .logo{
@@ -67,26 +65,30 @@ h3{
 /* section Formulaire*/
 
 .formulaire_recherche{
-    margin-left: 10px;
+    margin: 30px 0 30px 15px;
 }
-.localisation_bouton_rechercher{
+.localisation_bouton_texte_rechercher{
     display: flex;
 }
-.localisation_bouton_loupe{
-    position: relative;
+.localisation_bouton_icone_loupe{
     display: none;
 }
 .bouton_loupe{
     width: 50px;
+    border: 2px solid var(--gris_1);
+    border: 2px solid var(--bleu_fonce);
+    border-radius: 0 15px 15px 0;
+    background-color: var(--bleu_fonce);
 }
 .fa-magnifying-glass{
-position: absolute;
 color: white;
 top: 15px;
 left: 330px;
 }
 .fa-location-dot{
+    font-size: 18px;
     color: black;
+    margin: 0;
     text-align: center;
 }
 .icone_localisation{
@@ -95,6 +97,7 @@ left: 330px;
     border: 2px solid var(--gris_1);
     border-radius: 15px 0 0 15px;
     background-color: var(--gris_1);
+    text-align: center;
 }
 .input-submit{
     font-size: 18px;
@@ -111,16 +114,20 @@ left: 330px;
     color: black;
     padding: 12px;
     border: 2px solid var(--gris_1);
-    margin-left: -5px;
 }
 
 /* Filtres de recherche*/
 
+.fa_filtres{
+    font-size: 18px;
+    color: var(--bleu_fonce);
+    margin-right: 10px;
+}
 .filtres{
     max-width: 100%;
     width: 950px;
     height: 50px;
-    margin: 36px 0 38px 0;
+    margin: 50px 0 38px 15px;
     font-size: 17px;
     font-weight: 700;
     display: flex;
@@ -156,19 +163,14 @@ left: 330px;
 /*section hébergements*/
 
 #hebergements{
-    margin: 39px 10px 0 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
-}
-#activites{
-    margin: 0 10px 0 10px;
 }
 .hebergements{
     width: 64%;
     background-color: var(--gris_1);
     border-radius: 20px;
-    margin-right: 40px;
 }
 .cards_hebergements{
     width: 100%;
@@ -194,7 +196,7 @@ left: 330px;
     object-fit: cover;
     width: 96%;
     height: 125px;
-    margin: 5px;
+    margin: 2%;
     border-radius: 20px 20px 0 0;
 }
 .hebergements h2{
@@ -215,6 +217,10 @@ left: 330px;
 
 /* hebergements populaires*/
 
+.fa-chart-line{
+    font-size: 18px;
+    color: var(--bleu_fonce);
+}
 .hebergements_populaires{
     width: 31%;
     position: relative;
@@ -302,6 +308,9 @@ left: 330px;
 
 /* activites */
 
+#activites{
+    margin: 0 15px 0 15px;
+}
 .cards_activites{
     display: flex;
     justify-content: space-between;
@@ -341,6 +350,7 @@ left: 330px;
 #footer{
     height: 225px;
     margin-top: 60px;
+    margin: 60px 15px 0 15px;
     padding-top: 45px;
     background-color: var(--gris_1);
     display: flex;
@@ -372,7 +382,7 @@ left: 330px;
 
 /* Tablette */
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 992px)  {
     
     /* page */
 
@@ -382,8 +392,12 @@ left: 330px;
 
     /* Filtres */
 
+    .fa_filtres{
+    margin: 0 5px 0 5px;
+    }
     .filtres{
         width: 750px;
+        font-size: 15px;
     }
     .filtre{
         padding: 8px;
@@ -434,10 +448,15 @@ left: 330px;
 
 @media screen and (max-width: 768px) {
     
+    #body{
+        margin: 0;
+    }
+
     /* Header */
 
     #header{
         flex-direction: column;
+        margin-bottom: 0;
     }
     .menu{
         width: 100%;
@@ -464,15 +483,47 @@ left: 330px;
 
     /* section Formulaire*/
 
-    .localisation_bouton_rechercher{
+    .localisation_bouton_texte_rechercher{
         display: none;
     }
-    .localisation_bouton_loupe{
+    .localisation_bouton_icone_loupe{
+        max-width: 100%;
         display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
     }
 
-     /* Filtres */
+      /* Filtres */
 
+    .fa_filtres{
+    font-size: 16px;
+    margin-left: 10px;
+    }  
+    .filtres{
+        width: 100%;
+        font-size: 11px;
+        line-height: 13px;
+        height: auto;
+        margin-top: 0;
+        margin-left: 0;
+        justify-content:space-around;
+        flex-wrap: wrap;
+    }
+    .filtre{
+       width: 35%;       
+    }
+    .filtres_texte{
+        width: 100%;
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .info_marseille{
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+   
      /* Hebergements */
 
      #hebergements{
@@ -492,22 +543,19 @@ left: 330px;
         background-color: white;
         border-radius: 0px;
     }
+    .hebergements h2{
+        margin-left: 20px;
+    }
     .cards_hebergements{
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
-
     .card_hebergement_lien{
-        width: 80%;
+        width: 70%;
     }
     .card_hebergement{
-        width: 100%;
-        height: 215px;
-        background-color: white;
-        border-radius: 20px;
         box-shadow: 0 5px 10px var(--gris_1);
-        margin:0 0 30px 0; 
     }
     .afficher_plus{
         display: none;
@@ -520,9 +568,13 @@ left: 330px;
         height: auto;
         border-radius: 0;
     }
+    .hebergements_populaires h2{
+        margin-left: 20px;
+    }
     .cards_populaires{
         width: 100%;
         flex-direction: column;
+        justify-content: center;
     }
     .card_populaire_lien{
         width: 90%;
@@ -532,6 +584,10 @@ left: 330px;
 
     #activites{
         margin: 0;
+    }
+    #activites h2{
+        margin-top: 20px;
+        margin-left: 20px;
     }
     .cards_activites{
         display: flex;
@@ -553,7 +609,7 @@ left: 330px;
 
     #footer{
         height: auto;
-        margin-top: 80px;
+        margin: 80px 0 0 0;
         padding-left: 30px;
         flex-direction: column; 
     }

@@ -26,48 +26,52 @@
     </header>
     <!-- Main-->
     <main id="main">
-        <!-- formulaire de recherche + filtres-->
+        <div class="titre_page">
+            <h1>Trouvez votre hébergement pour des vacances de reve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+        </div>
+            <!-- formulaire de recherche + filtres-->
         <!-- formulaire -->
         <section class="formulaire_recherche">
-            <form method="get" action="">
-                <h1>Trouvez votre hébergement pour des vacances de reve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-                <div class="localisation_bouton_rechercher">
+            <form method="get" action="">    
+                <!-- Barre de recherche pour mode Desktop et Tablette-->
+                <div class="localisation_bouton_texte_rechercher">
                     <div class="icone_localisation">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
                     <input class="input-texte" type="text" name="choix_localisation" id="choix_localisation" placeholder="Marseille, France" size="20" maxlength="20">
-                    <input class="input-submit" type="submit" value="Rechercher">
+                    <button name="recherche_destination" class="input-submit">Rechercher</button>
                 </div>
-                <div class="localisation_bouton_loupe">
+                <!-- Barre de recherche pour mode Mobile-->
+                <div class="localisation_bouton_icone_loupe">
                     <div class="icone_localisation">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
                     <input class="input-texte" type="text" name="choix_localisation" id="choix_localisation" placeholder="Marseille, France" size="20" maxlength="20">
-                    <input class="input-submit bouton_loupe" type="submit" value="">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button name="recherche_destination" class="bouton_loupe">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
                 </div>
             </form>
             <!-- filtres de recherche -->
             <div class="filtres">
-                <p>Filtres</p>
+                <p class="filtres_texte">Filtres</p>
                 <p class="filtre">
-                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <i class="fa-solid fa-money-bill-wave fa_filtres"></i>
                     Economique
                 </p>
                 <p class="filtre">
-                    <i class="fa-solid fa-person"></i>
+                    <i class="fa-solid fa-person fa_filtres"></i>
                     Familial
                 </p>
                 <p class="filtre">
-                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart fa_filtres"></i>
                     Romantique
                 </p>
                 <p class="filtre">
-                    <i class="fa-solid fa-dog"></i>
+                    <i class="fa-solid fa-dog fa_filtres"></i>
                     Animaux autorisés
                 </p>
-                <p></p>
             </div>
             <!-- info nb de logements disponibles-->
             <p class="info_marseille">
