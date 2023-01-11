@@ -73,7 +73,6 @@ h3{
 }
 .input-submit{
     font-size: 18px;
-    size: 10;
     border-radius: 0 15px 15px 0;
     background-color: var(--bleu_fonce);
     color:white;
@@ -300,7 +299,6 @@ color: white;
 .cotation_populaire{
     position: absolute;
     bottom: 5px;
-    
 }
 
 /* activites */
@@ -494,7 +492,6 @@ color: white;
     .localisation_bouton_icone_loupe{
         max-width: 100%;
         display: flex;
-        justify-content:last flex-start;
         margin-top: 40px;
         margin-bottom: 30px;
     }
